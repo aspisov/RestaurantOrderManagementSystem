@@ -14,7 +14,6 @@ fun main() {
     val statisticsService = StatisticsService()
     val userNotificationService = UserNotificationService()
 
-    // Подписываем сервис уведомлений на обновления статуса заказа
     // subscribing notification service to order status updates
     orderService.attach(userNotificationService)
 
